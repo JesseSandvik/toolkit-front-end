@@ -1,7 +1,10 @@
+import {useState} from 'react';
+
 const App = () => {
+  const [variable, setVariable] = useState('World');
   return (
     <div className="App">
-      <h1>Hello World!</h1>
+      <h1>{`Hello ${variable}!`}</h1>
     </div>
   );
 };
