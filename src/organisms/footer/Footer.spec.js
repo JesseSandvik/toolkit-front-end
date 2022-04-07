@@ -4,7 +4,7 @@ import Footer from './Footer';
 import {creator} from '../../appData/index';
 
 describe('Footer', () => {
-  it('Renders the copyright in the footer', () => {
+  it('Renders the copyright year in the footer', () => {
     render(<Footer />);
 
     expect(screen.getByRole('contentinfo')).toBeInTheDocument();
