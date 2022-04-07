@@ -13,4 +13,25 @@ a {
   text-decoration: none;
 }
 
+.App {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  min-height: 100vh;
+}
+
+footer {
+  border: 1px solid red;
+  grid-row: 3/-1;
+}
+
+header {
+  border: 1px solid red;
+  grid-row: 1/1;
+}
+
+main {
+  border: 2px solid aqua;
+  grid-row: 2/2;
+}
+
 /*# sourceMappingURL=styles.css.map */

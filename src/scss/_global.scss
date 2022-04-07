@@ -12,3 +12,9 @@ ul {
 a {
   text-decoration: none;
 }
+
+.App {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  min-height: 100vh;
+}
