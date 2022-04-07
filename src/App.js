@@ -1,13 +1,10 @@
-import {useState} from 'react';
 import Footer from './organisms/footer/Footer';
+import Header from './organisms/header/Header';
 
 const App = () => {
-  const [variable, setVariable] = useState('World');
   return (
     <div className="App">
-      <header>
-        <h1>{`Hello ${variable}!`}</h1>
-      </header>
+      <Header />
       <main></main>
       <Footer />
     </div>
