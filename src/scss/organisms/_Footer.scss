@@ -1,4 +1,7 @@
+@use '../variables' as *;
+
 footer {
   border: 1px solid red;
   grid-row: 3 / -1;
+  padding: $padding-global-size;
 }

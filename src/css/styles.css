@@ -15,18 +15,20 @@ a {
 
 .App {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr auto;
   min-height: 100vh;
 }
 
 footer {
   border: 1px solid red;
   grid-row: 3/-1;
+  padding: 1rem;
 }
 
 header {
   border: 1px solid red;
   grid-row: 1/1;
+  padding: 1rem;
 }
 
 main {
