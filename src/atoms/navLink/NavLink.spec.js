@@ -4,7 +4,7 @@ import {BrowserRouter as Router} from 'react-router-dom';
 import NavigationLink from './NavLink';
 
 describe('<NavLink />', () => {
-  it('Renders the NavLink component', () => {
+  it('01. Renders the NavLink component', () => {
     render(
       <Router>
         <NavigationLink />

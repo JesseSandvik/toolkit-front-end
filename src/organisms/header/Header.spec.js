@@ -3,7 +3,7 @@ import {render, screen} from '@testing-library/react';
 import {BrowserRouter as Router} from 'react-router-dom';
 import Header from './Header';
 
-describe('Header', () => {
+describe('<Header />', () => {
   it('Renders Hello World!', () => {
     render(
       <Router>
@@ -12,8 +12,11 @@ describe('Header', () => {
     );
     expect(screen.getByRole('heading')).toBeInTheDocument();
     expect(screen.getByRole('heading', {name: 'Hello World!'})).toBeInTheDocument();
+    expect(
+      screen.queryByRole('heading', {name: 'Welcome to Thunderdome!'})
+    ).not.toBeInTheDocument();
   });
-  it('Renders the navigation', () => {
+  it('01. Renders the navigation', () => {
     render(
       <Router>
         <Header />
@@ -21,7 +24,7 @@ describe('Header', () => {
     );
     expect(screen.getByRole('navigation')).toBeInTheDocument();
   });
-  it('Renders a list', () => {
+  it('02. Renders a list', () => {
     render(
       <Router>
         <Header />
@@ -29,7 +32,7 @@ describe('Header', () => {
     );
     expect(screen.getByRole('list')).toBeInTheDocument();
   });
-  it('Renders the NavLink in the list item', () => {
+  it('03. Renders the NavLink in the list item', () => {
     render(
       <Router>
         <Header />
@@ -37,5 +40,13 @@ describe('Header', () => {
     );
     expect(screen.getByRole('listitem')).toBeInTheDocument();
     expect(screen.getByRole('link')).toBeInTheDocument();
+  });
+  it('04. Renders the "Home" NavLink list item', () => {
+    render(
+      <Router>
+        <Header />
+      </Router>
+    );
+    expect(screen.getByRole('link', {name: 'home'})).toBeInTheDocument();
   });
 });
