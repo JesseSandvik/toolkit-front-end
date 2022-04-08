@@ -7,4 +7,8 @@ describe('Navigation', () => {
     render(<Navigation />);
     expect(screen.getByRole('navigation')).toBeInTheDocument();
   });
+  it('Renders a list item', () => {
+    render(<Navigation />);
+    expect(screen.getByRole('listitem')).toBeInTheDocument();
+  });
 });
