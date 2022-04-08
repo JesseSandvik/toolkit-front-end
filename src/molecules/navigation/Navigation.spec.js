@@ -12,6 +12,14 @@ describe('Navigation', () => {
     );
     expect(screen.getByRole('navigation')).toBeInTheDocument();
   });
+  it('Renders a list', () => {
+    render(
+      <Router>
+        <Navigation />
+      </Router>
+    );
+    expect(screen.getByRole('list')).toBeInTheDocument();
+  });
   it('Renders a list item', () => {
     render(
       <Router>

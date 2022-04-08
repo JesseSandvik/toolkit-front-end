@@ -21,13 +21,13 @@ describe('Header', () => {
     );
     expect(screen.getByRole('navigation')).toBeInTheDocument();
   });
-  it('Renders a list item', () => {
+  it('Renders a list', () => {
     render(
       <Router>
         <Header />
       </Router>
     );
-    expect(screen.getByRole('listitem')).toBeInTheDocument();
+    expect(screen.getByRole('list')).toBeInTheDocument();
   });
   it('Renders the NavLink in the list item', () => {
     render(
@@ -35,6 +35,7 @@ describe('Header', () => {
         <Header />
       </Router>
     );
+    expect(screen.getByRole('listitem')).toBeInTheDocument();
     expect(screen.getByRole('link')).toBeInTheDocument();
   });
 });
