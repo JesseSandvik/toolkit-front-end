@@ -1,9 +1,9 @@
-import ListItem from '../../atoms/listItem/ListItem';
+import ListItemNavigationLink from '../listItemNavLink/ListItemNavLink';
 
 const Navigation = () => {
   return (
     <nav>
-      <ListItem></ListItem>
+      <ListItemNavigationLink />
     </nav>
   );
 };
