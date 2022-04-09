@@ -1,14 +1,25 @@
 @use '../variables' as *;
+@use '../breakpoints' as *;
 
 header {
   border: 1px solid red;
   display: grid;
   grid-row: 1 / 1;
-  grid-template-columns: 1fr 1fr;
   padding: $padding-global-size;
   text-transform: capitalize;
+  @include sm {
+    grid-template-rows: 1fr 1fr;
+  }
+  @include md {
+    border: 5px solid red;
+    grid-template-columns: 1fr 1fr;
+  }
+  @include lg {
+    grid-template-columns: 1fr 1fr;
+  }
   .container {
     align-items: center;
+    border: 1px solid orange;
     display: flex;
     flex-direction: row;
     padding: 0 $padding-global-size;

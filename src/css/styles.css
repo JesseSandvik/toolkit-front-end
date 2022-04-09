@@ -39,12 +39,28 @@ header {
   border: 1px solid red;
   display: grid;
   grid-row: 1/1;
-  grid-template-columns: 1fr 1fr;
   padding: 1rem;
   text-transform: capitalize;
 }
+@media (max-width: 500px) {
+  header {
+    grid-template-rows: 1fr 1fr;
+  }
+}
+@media (min-width: 500px) {
+  header {
+    border: 5px solid red;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1200px) {
+  header {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 header .container {
   align-items: center;
+  border: 1px solid orange;
   display: flex;
   flex-direction: row;
   padding: 0 1rem;
