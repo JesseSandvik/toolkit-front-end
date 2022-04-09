@@ -2,6 +2,23 @@
 
 header {
   border: 1px solid red;
+  display: grid;
   grid-row: 1 / 1;
+  grid-template-columns: 1fr 1fr;
   padding: $padding-global-size;
+  .container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+  }
+  #header-left {
+    border: 1px solid orange;
+    grid-column: 1 / 1;
+    justify-content: flex-start;
+  }
+  #header-right {
+    border: 1px solid violet;
+    grid-column: 2 / -1;
+    justify-content: flex-end;
+  }
 }
