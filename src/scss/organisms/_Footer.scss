@@ -2,6 +2,16 @@
 
 footer {
   border: 1px solid red;
+  display: grid;
   grid-row: 3 / -1;
+  grid-template-columns: auto;
   padding: $padding-global-size;
+  .container {
+    align-items: center;
+    display: flex;
+  }
+  #footer-center {
+    flex-direction: column;
+    justify-content: center;
+  }
 }

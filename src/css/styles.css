@@ -21,8 +21,18 @@ a {
 
 footer {
   border: 1px solid red;
+  display: grid;
   grid-row: 3/-1;
+  grid-template-columns: auto;
   padding: 1rem;
+}
+footer .container {
+  align-items: center;
+  display: flex;
+}
+footer #footer-center {
+  flex-direction: column;
+  justify-content: center;
 }
 
 header {
@@ -31,19 +41,19 @@ header {
   grid-row: 1/1;
   grid-template-columns: 1fr 1fr;
   padding: 1rem;
+  text-transform: capitalize;
 }
 header .container {
   align-items: center;
   display: flex;
   flex-direction: row;
+  padding: 0 1rem;
 }
 header #header-left {
-  border: 1px solid orange;
   grid-column: 1/1;
   justify-content: flex-start;
 }
 header #header-right {
-  border: 1px solid violet;
   grid-column: 2/-1;
   justify-content: flex-end;
 }
