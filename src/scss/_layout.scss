@@ -1,0 +1,22 @@
+@use './variables' as *;
+@use 'sass:math';
+
+#layout {
+  background: linear-gradient(80deg,
+    rgba(#000, 0.2),
+    rgba(#000, 0.2),
+    rgba(#000, 0.6),
+    rgba(#000, 0.6),
+    rgba(#000, 0.5),
+    rgba(#000, 0.5),
+  );
+  color: $secondary;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  margin-top: 80vh;
+  min-height: 100vh;
+  overflow-x: hidden;
+  padding: math.div($padding-global-size, 2);
+  position: sticky;
+  z-index: 1;
+}

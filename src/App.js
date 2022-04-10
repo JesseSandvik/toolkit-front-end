@@ -4,7 +4,7 @@ import Main from './organisms/main/Main';
 
 const App = () => {
   return (
-    <div className="App">
+    <div id="layout">
       <Header />
       <Main />
       <Footer />

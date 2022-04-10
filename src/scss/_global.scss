@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
   box-sizing: border-box;
   color: inherit;
@@ -5,6 +7,20 @@
 }
 
 body {
+  background:
+    linear-gradient(80deg,
+    rgba(#000, 0.0),
+    rgba(#000, 0.5),
+    rgba(#000, 0.7),
+    rgba(#000, 0.0),
+    rgba(#000, 1.0)),
+    url('../images/neon-splatter.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.8rem;
   overflow-x: hidden;
 }
 
@@ -15,10 +31,4 @@ ul {
 
 a {
   text-decoration: none;
-}
-
-.App {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
 }

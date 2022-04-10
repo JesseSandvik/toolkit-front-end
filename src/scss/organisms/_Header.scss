@@ -19,7 +19,6 @@ header {
     }
   }
   @include md {
-    border: 5px solid red;
     grid-template-columns: 1fr 1fr;
     #header-left {
       grid-column: 1 / 1;
