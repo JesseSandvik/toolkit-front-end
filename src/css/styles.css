@@ -27,19 +27,34 @@ a {
 
 #layout {
   background: linear-gradient(80deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  border-radius: 15px;
   color: #f2f2f2;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  margin-top: 80vh;
-  min-height: 100vh;
+  margin: 20vh 1rem 2vh;
+  min-height: 84vh;
   overflow-x: hidden;
   padding: 0.5rem;
   position: sticky;
-  z-index: 1;
+}
+
+#login-btn {
+  background: #000;
+  border: 3px solid #000;
+  border-radius: 15px;
+  color: #f2f2f2;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 0.08rem;
+  text-transform: capitalize;
+  width: 80px;
+}
+#login-btn:hover {
+  border: 3px solid #7f2ccb;
 }
 
 footer {
-  border: 1px solid red;
+  color: #f2f2f2;
   display: grid;
   grid-row: 3/-1;
   grid-template-columns: auto;
@@ -55,11 +70,19 @@ footer #footer-center {
 }
 
 header {
-  border: 1px solid red;
+  background: #000;
+  color: #f2f2f2;
   display: grid;
   grid-row: 1/1;
+  height: 65px;
+  left: 0;
+  margin-top: 75vh;
   padding: 1rem;
+  position: sticky;
+  right: 0;
   text-transform: capitalize;
+  top: 0;
+  z-index: 1;
 }
 @media (max-width: 500px) {
   header {
@@ -89,14 +112,13 @@ header {
 }
 header .container {
   align-items: center;
-  border: 1px solid orange;
   display: flex;
   flex-direction: row;
   padding: 0 1rem;
 }
 
 main {
-  border: 2px solid aqua;
+  display: grid;
   grid-row: 2/2;
 }
 

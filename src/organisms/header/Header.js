@@ -1,3 +1,4 @@
+import LoginButton from '../../atoms/buttons/login/LoginButton';
 import Navigation from '../../molecules/navigation/Navigiation';
 
 const Header = () => {
@@ -8,6 +9,7 @@ const Header = () => {
       </div>
       <div id="header-right" className="container">
         <Navigation />
+        <LoginButton />
       </div>
     </header>
   );

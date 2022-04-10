@@ -1,0 +1,16 @@
+@use '../variables' as *;
+
+#login-btn {
+  background: $primary;
+  border: 3px solid $primary;
+  border-radius: $border-radius-global-size;
+  color: $secondary;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 0.08rem;
+  text-transform: capitalize;
+  width: 80px;
+  &:hover {
+    border: 3px solid $accent;
+  }
+}

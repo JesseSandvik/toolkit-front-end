@@ -4,9 +4,11 @@ import Main from './organisms/main/Main';
 
 const App = () => {
   return (
-    <div id="layout">
+    <div className="App">
       <Header />
-      <Main />
+      <div id="layout">
+        <Main />
+      </div>
       <Footer />
     </div>
   );

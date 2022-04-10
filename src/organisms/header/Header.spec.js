@@ -49,4 +49,12 @@ describe('<Header />', () => {
     );
     expect(screen.getByRole('link', {name: 'home'})).toBeInTheDocument();
   });
+  it('06. Renders the login button', () => {
+    render(
+      <Router>
+        <Header />
+      </Router>
+    );
+    expect(screen.getByRole('button', {name: 'login'})).toBeInTheDocument();
+  });
 });

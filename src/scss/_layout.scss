@@ -10,13 +10,13 @@
     rgba(#000, 0.5),
     rgba(#000, 0.5),
   );
+  border-radius: $border-radius-global-size;
   color: $secondary;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  margin-top: 80vh;
-  min-height: 100vh;
+  margin: 20vh $margin-global-size 2vh;
+  min-height: 84vh;
   overflow-x: hidden;
   padding: math.div($padding-global-size, 2);
   position: sticky;
-  z-index: 1;
 }
