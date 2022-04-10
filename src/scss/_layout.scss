@@ -1,4 +1,5 @@
 @use './variables' as *;
+@use './breakpoints' as *;
 @use 'sass:math';
 
 #layout {
@@ -14,9 +15,15 @@
   color: $secondary;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  margin: 20vh $margin-global-size 2vh;
-  min-height: 84vh;
   overflow-x: hidden;
   padding: math.div($padding-global-size, 2);
   position: sticky;
+  @include sm {
+    margin: $margin-global-size;
+    min-height: 100vh;
+  }
+  @include md {
+    margin: 20vh $margin-global-size 2vh;
+    min-height: 84vh;
+  }
 }

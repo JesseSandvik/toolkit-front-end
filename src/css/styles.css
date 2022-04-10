@@ -31,11 +31,21 @@ a {
   color: #f2f2f2;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  margin: 20vh 1rem 2vh;
-  min-height: 84vh;
   overflow-x: hidden;
   padding: 0.5rem;
   position: sticky;
+}
+@media (max-width: 500px) {
+  #layout {
+    margin: 1rem;
+    min-height: 100vh;
+  }
+}
+@media (min-width: 500px) {
+  #layout {
+    margin: 20vh 1rem 2vh;
+    min-height: 84vh;
+  }
 }
 
 #login-btn {
@@ -74,9 +84,7 @@ header {
   color: #f2f2f2;
   display: grid;
   grid-row: 1/1;
-  height: 65px;
   left: 0;
-  margin-top: 75vh;
   padding: 1rem;
   position: sticky;
   right: 0;
@@ -100,6 +108,8 @@ header {
 @media (min-width: 500px) {
   header {
     grid-template-columns: 1fr 1fr;
+    height: 65px;
+    margin-top: 80vh;
   }
   header #header-left {
     grid-column: 1/1;
