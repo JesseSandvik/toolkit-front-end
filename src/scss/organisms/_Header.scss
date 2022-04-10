@@ -9,13 +9,26 @@ header {
   text-transform: capitalize;
   @include sm {
     grid-template-rows: 1fr 1fr;
+    #header-left {
+      grid-row: 2 / -1;
+      justify-content: center;
+    }
+    #header-right {
+      grid-row: 1 / 1;
+      justify-content: flex-end;
+    }
   }
   @include md {
     border: 5px solid red;
     grid-template-columns: 1fr 1fr;
-  }
-  @include lg {
-    grid-template-columns: 1fr 1fr;
+    #header-left {
+      grid-column: 1 / 1;
+      justify-content: flex-start;
+    }
+    #header-right {
+      grid-column: 2 / -1;
+      justify-content: flex-end;
+    }
   }
   .container {
     align-items: center;
@@ -23,13 +36,5 @@ header {
     display: flex;
     flex-direction: row;
     padding: 0 $padding-global-size;
-  }
-  #header-left {
-    grid-column: 1 / 1;
-    justify-content: flex-start;
-  }
-  #header-right {
-    grid-column: 2 / -1;
-    justify-content: flex-end;
   }
 }

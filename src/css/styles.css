@@ -50,16 +50,27 @@ header {
   header {
     grid-template-rows: 1fr 1fr;
   }
+  header #header-left {
+    grid-row: 2/-1;
+    justify-content: center;
+  }
+  header #header-right {
+    grid-row: 1/1;
+    justify-content: flex-end;
+  }
 }
 @media (min-width: 500px) {
   header {
     border: 5px solid red;
     grid-template-columns: 1fr 1fr;
   }
-}
-@media (min-width: 1200px) {
-  header {
-    grid-template-columns: 1fr 1fr;
+  header #header-left {
+    grid-column: 1/1;
+    justify-content: flex-start;
+  }
+  header #header-right {
+    grid-column: 2/-1;
+    justify-content: flex-end;
   }
 }
 header .container {
@@ -68,14 +79,6 @@ header .container {
   display: flex;
   flex-direction: row;
   padding: 0 1rem;
-}
-header #header-left {
-  grid-column: 1/1;
-  justify-content: flex-start;
-}
-header #header-right {
-  grid-column: 2/-1;
-  justify-content: flex-end;
 }
 
 main {
