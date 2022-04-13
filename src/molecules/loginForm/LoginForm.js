@@ -11,6 +11,8 @@ const LoginForm = () => {
     return (
         <form>
             <input
+                required
+                id='username'
                 name='name'
                 type='text'
                 value={formData.name}
