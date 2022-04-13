@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 const LoginForm = () => {
     const [formData, setFormData] = useState({
-        name: '',
+        username: '',
         email: '',
         password: '',
         passwordMatch: ''
@@ -10,12 +10,14 @@ const LoginForm = () => {
 
     return (
         <form>
+            <label htmlFor='username'>Username</label>
             <input
                 required
                 id='username'
-                name='name'
+                aria-label='username'
+                name='username'
                 type='text'
-                value={formData.name}
+                value={formData.username}
             />
         </form>
     );

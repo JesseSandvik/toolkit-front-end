@@ -5,6 +5,6 @@ import LoginForm from './LoginForm';
 describe('<LoginForm />', () => {
     it('01. Renders the LoginForm component', () => {
         render(<LoginForm />);
-        expect(screen.getByRole('textbox', {id: /username/i})).toBeInTheDocument();
+        expect(screen.getByRole('textbox', {name: 'username'})).toBeInTheDocument();
     });
 });
