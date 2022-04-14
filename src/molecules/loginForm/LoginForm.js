@@ -49,6 +49,7 @@ const LoginForm = () => {
                 type='password'
                 value={formData.email}
             />
+            <button type='submit'>sign up</button>
         </form>
     );
 }

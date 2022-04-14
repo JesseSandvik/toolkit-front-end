@@ -9,5 +9,7 @@ describe('<LoginForm />', () => {
         expect(screen.getByLabelText('email')).toBeInTheDocument();
         expect(screen.getByLabelText('password')).toBeInTheDocument();
         expect(screen.getByLabelText('confirm password')).toBeInTheDocument();
+        expect(screen.getByRole('button', {name: 'sign up'})).toBeInTheDocument();
+        expect(screen.getByRole('button', {name: 'sign up'})).toHaveAttribute('type', 'submit');
     });
 });
