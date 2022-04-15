@@ -20,20 +20,8 @@ describe('<Navigation />', () => {
     );
     expect(screen.getByRole('list')).toBeInTheDocument();
   });
-  it('03. Renders a list item', () => {
-    render(
-      <Router>
-        <Navigation />
-      </Router>
-    );
-    expect(screen.getByRole('listitem')).toBeInTheDocument();
-  });
-  it('04. Renders the NavLink in the list item', () => {
-    render(
-      <Router>
-        <Navigation />
-      </Router>
-    );
-    expect(screen.getByRole('link')).toBeInTheDocument();
+  it('03. Renders the navigation link for home, "/"', () => {
+    render(<Router><Navigation /></Router>);
+    expect(screen.getByRole('link', {name: /home/i})).toBeInTheDocument();
   });
 });

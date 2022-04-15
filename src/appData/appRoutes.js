@@ -1,4 +1,5 @@
-import HomePage from '../pages/home/HomePage';
+import HomePage from '../pages/home/Home';
+import RegisterPage from '../pages/register/Register';
 
 export const appRoutes = [
   {
@@ -6,4 +7,9 @@ export const appRoutes = [
     path: '/',
     element: <HomePage />,
   },
+  {
+    name: 'register',
+    path: '/register',
+    element: <RegisterPage />
+  }
 ];

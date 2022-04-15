@@ -32,16 +32,7 @@ describe('<Header />', () => {
     );
     expect(screen.getByRole('list')).toBeInTheDocument();
   });
-  it('04. Renders the NavLink in the list item', () => {
-    render(
-      <Router>
-        <Header />
-      </Router>
-    );
-    expect(screen.getByRole('listitem')).toBeInTheDocument();
-    expect(screen.getByRole('link')).toBeInTheDocument();
-  });
-  it('05. Renders the "Home" NavLink list item', () => {
+  it('04. Renders the navigation link for home, "/"', () => {
     render(
       <Router>
         <Header />
@@ -49,7 +40,7 @@ describe('<Header />', () => {
     );
     expect(screen.getByRole('link', {name: 'home'})).toBeInTheDocument();
   });
-  it('06. Renders the login button', () => {
+  it('05. Renders the login button', () => {
     render(
       <Router>
         <Header />
