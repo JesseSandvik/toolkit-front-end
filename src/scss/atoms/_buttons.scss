@@ -1,6 +1,6 @@
 @use '../variables' as *;
 
-#login-btn {
+.header-btn {
   background: $primary;
   border: 3px solid $primary;
   border-radius: $border-radius-global-size;
@@ -11,6 +11,6 @@
   text-transform: capitalize;
   width: 80px;
   &:hover {
-    border: 3px solid $accent;
+    opacity: 0.9;
   }
 }

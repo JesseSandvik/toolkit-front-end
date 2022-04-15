@@ -48,7 +48,7 @@ a {
   }
 }
 
-#login-btn {
+.header-btn {
   background: #000;
   border: 3px solid #000;
   border-radius: 15px;
@@ -59,8 +59,8 @@ a {
   text-transform: capitalize;
   width: 80px;
 }
-#login-btn:hover {
-  border: 3px solid #7f2ccb;
+.header-btn:hover {
+  opacity: 0.9;
 }
 
 footer {

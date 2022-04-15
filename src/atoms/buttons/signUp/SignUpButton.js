@@ -1,5 +1,9 @@
 const SignUpButton = () => {
-  return <button>sign up</button>;
+  return (
+    <button id="signup-btn" className="header-btn">
+      sign up
+    </button>
+  );
 };
 
 export default SignUpButton;

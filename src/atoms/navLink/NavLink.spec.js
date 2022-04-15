@@ -7,9 +7,10 @@ describe('<NavLink />', () => {
   it('01. Renders the NavLink component', () => {
     render(
       <Router>
-        <NavigationLink />
+        <NavigationLink path="*"></NavigationLink>
       </Router>
     );
-    expect(screen.getByRole('link')).toBeInTheDocument();
+    const navLink = screen.getByRole('link');
+    expect(navLink).toBeInTheDocument();
   });
 });
