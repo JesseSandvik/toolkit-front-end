@@ -1,8 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 
 const LoginForm = () => {
-    const errorRef = useRef();
-    const usernameRef = useRef();
 
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
@@ -23,8 +21,8 @@ const LoginForm = () => {
                 aria-describedby='uidnote'
                 name='username'
                 type='text'
-                defaultValue={username ? username : ''}
-                onChange={(event) => setUsername(event.target.value)}
+                value={username}
+                onChange={(event) => setUsername(username => username = event.target.value)}
             />
             <label htmlFor='email'>email</label>
             <input
@@ -33,6 +31,8 @@ const LoginForm = () => {
                 autoComplete='off'
                 name='email'
                 type='text'
+                value={email}
+                onChange={(event) => setEmail(email => email = event.target.value)}
             />
             <label htmlFor='password'>password</label>
             <input
@@ -42,6 +42,8 @@ const LoginForm = () => {
                 aria-describedby='passwordnote'
                 name='password'
                 type='password'
+                value={password}
+                onChange={(event) => setPassword(password => password = event.target.value)}
             />
             <label htmlFor='confirmPassword'>confirm password</label>
             <input
@@ -51,6 +53,8 @@ const LoginForm = () => {
                 aria-describedby='confirmnote'
                 name='confirmPassword'
                 type='password'
+                value={passwordMatch}
+                onChange={(event) => setPasswordMatch(passwordMatch => passwordMatch = event.target.value)}
             />
             <button type='submit'>sign up</button>
         </form>
