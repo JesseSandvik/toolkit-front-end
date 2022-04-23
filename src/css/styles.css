@@ -6,9 +6,9 @@
 }
 
 body {
-  background: linear-gradient(80deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0), black), url("../images/pink-cake.jpg");
+  background: linear-gradient(80deg, black, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url("../images/cupcake-blue.jpg");
   background-attachment: fixed;
-  background-position: bottom;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Raleway", sans-serif;
@@ -26,14 +26,11 @@ a {
 }
 
 #layout {
-  background: linear-gradient(80deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  border-radius: 15px;
   color: #f2f2f2;
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
   overflow-x: hidden;
-  padding: 0.5rem;
 }
 
 .header-btn {
@@ -49,6 +46,44 @@ a {
 }
 .header-btn:hover {
   opacity: 0.9;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+}
+footer .container {
+  display: flex;
+}
+footer #footer-center {
+  align-items: center;
+  grid-column: 2/2;
+  justify-content: center;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.4392156863);
+  display: grid;
+  grid-column: 1/-1;
+  grid-template-columns: 1fr 1fr;
+  grid-row: 1/1;
+  padding: 1rem;
+  text-transform: capitalize;
+}
+header .container {
+  display: flex;
+}
+header #header-left #app-title {
+  display: flex;
+  flex-direction: column;
+}
+header #header-left #app-title small {
+  color: #fac8cd;
+  font-size: 0.8rem;
+  margin: 0.25rem 0.5rem 0;
+}
+header #header-right {
+  justify-content: flex-end;
 }
 
 main {

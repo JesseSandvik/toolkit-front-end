@@ -1,3 +1,14 @@
 @use '../variables' as *;
 
-footer {}
+footer {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  .container {
+    display: flex;
+  }
+  #footer-center {
+    align-items: center;
+    grid-column: 2 / 2;
+    justify-content: center;
+  }
+}

@@ -8,7 +8,10 @@ const Header = () => {
   return (
     <header>
       <div id="header-left" className="container">
-        <h1>{appTitle}</h1>
+        <span id="app-title">
+          <h1>{appTitle}</h1>
+          <small>Workshop Toolkit</small>
+        </span>
       </div>
       <div id="header-right" className="container">
         <Navigation />

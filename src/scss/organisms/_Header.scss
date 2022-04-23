@@ -1,4 +1,30 @@
 @use '../variables' as *;
 @use '../breakpoints' as *;
+@use 'sass:math';
 
-header {}
+header {
+  background: $black-glass;
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: 1fr 1fr;
+  grid-row: 1 / 1;
+  padding: $padding-global-size;
+  text-transform: capitalize;
+  .container {
+    display: flex;
+  }
+  #header-left {
+    #app-title {
+      display: flex;
+      flex-direction: column;
+      small {
+        color: $accent-two;
+        font-size: 0.8rem;
+        margin: math.div($margin-global-size, 4) math.div($margin-global-size, 2) 0;
+      }
+    }
+  }
+  #header-right {
+    justify-content: flex-end;
+  }
+}
