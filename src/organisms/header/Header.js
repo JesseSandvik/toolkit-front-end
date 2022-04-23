@@ -14,9 +14,8 @@ const Header = () => {
         </span>
       </div>
       <div id="header-right" className="container">
-        <Navigation />
-        <SignupButton />
         <LoginButton />
+        <SignupButton />
       </div>
     </header>
   );

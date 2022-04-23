@@ -1,4 +1,7 @@
 main {
   display: grid;
   grid-row: 2 / 2;
+  h2 {
+    text-transform: capitalize;
+  }
 }

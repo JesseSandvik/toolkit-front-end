@@ -87,5 +87,8 @@ main {
   display: grid;
   grid-row: 2/2;
 }
+main h2 {
+  text-transform: capitalize;
+}
 
 /*# sourceMappingURL=styles.css.map */

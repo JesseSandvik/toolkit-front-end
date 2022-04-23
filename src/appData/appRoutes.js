@@ -10,6 +10,6 @@ export const appRoutes = [
   {
     name: 'register',
     path: '/register',
-    element: <RegisterPage />
-  }
+    element: <RegisterPage />,
+  },
 ];
