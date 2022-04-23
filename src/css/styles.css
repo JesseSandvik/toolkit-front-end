@@ -34,23 +34,21 @@ a {
 }
 
 .header-btn {
-  background: #252627;
-  border: 3px solid #252627;
-  border-radius: 15px;
-  color: #f2f2f2;
+  background: transparent;
+  border: none;
   cursor: pointer;
   font-weight: bold;
-  letter-spacing: 0.08rem;
-  text-transform: capitalize;
+  height: 34px;
+  letter-spacing: 0.12rem;
+  margin: 0 0.5rem;
+  text-transform: uppercase;
   width: 80px;
-}
-.header-btn:hover {
-  opacity: 0.9;
 }
 
 footer {
   display: grid;
   grid-template-columns: auto 1fr auto;
+  padding: 1rem;
 }
 footer .container {
   display: flex;
@@ -62,7 +60,6 @@ footer #footer-center {
 }
 
 header {
-  background: rgba(0, 0, 0, 0.4392156863);
   display: grid;
   grid-column: 1/-1;
   grid-template-columns: 1fr 1fr;

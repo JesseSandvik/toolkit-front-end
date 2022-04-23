@@ -3,7 +3,6 @@
 @use 'sass:math';
 
 header {
-  background: $black-glass;
   display: grid;
   grid-column: 1 / -1;
   grid-template-columns: 1fr 1fr;

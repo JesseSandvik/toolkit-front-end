@@ -1,16 +1,14 @@
 @use '../variables' as *;
+@use 'sass:math';
 
 .header-btn {
-  background: $primary;
-  border: 3px solid $primary;
-  border-radius: $border-radius-global-size;
-  color: $secondary;
+  background: transparent;
+  border: none;
   cursor: pointer;
   font-weight: bold;
-  letter-spacing: 0.08rem;
-  text-transform: capitalize;
+  height: 34px;
+  letter-spacing: 0.12rem;
+  margin: 0 math.div($margin-global-size, 2);
+  text-transform: uppercase;
   width: 80px;
-  &:hover {
-    opacity: 0.9;
-  }
 }

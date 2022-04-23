@@ -3,6 +3,7 @@
 footer {
   display: grid;
   grid-template-columns: auto 1fr auto;
+  padding: $padding-global-size;
   .container {
     display: flex;
   }
