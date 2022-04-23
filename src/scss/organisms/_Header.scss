@@ -1,46 +1,4 @@
 @use '../variables' as *;
 @use '../breakpoints' as *;
 
-header {
-  background: $primary;
-  color: $secondary;
-  display: grid;
-  grid-row: 1 / 1;
-  left: 0;
-  padding: $padding-global-size;
-  position: sticky;
-  right: 0;
-  text-transform: capitalize;
-  top: 0;
-  z-index: 1;
-  @include sm {
-    grid-template-rows: 1fr 1fr;
-    #header-left {
-      grid-row: 2 / -1;
-      justify-content: center;
-    }
-    #header-right {
-      grid-row: 1 / 1;
-      justify-content: flex-end;
-    }
-  }
-  @include md {
-    grid-template-columns: 1fr 1fr;
-    height: 65px;
-    margin-top: 80vh;
-    #header-left {
-      grid-column: 1 / 1;
-      justify-content: flex-start;
-    }
-    #header-right {
-      grid-column: 2 / -1;
-      justify-content: flex-end;
-    }
-  }
-  .container {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    padding: 0 $padding-global-size;
-  }
-}
+header {}

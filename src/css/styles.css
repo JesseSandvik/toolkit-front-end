@@ -6,9 +6,9 @@
 }
 
 body {
-  background: linear-gradient(80deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0), black), url("../images/neon-splatter.jpg");
+  background: linear-gradient(80deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0), black), url("../images/pink-cake.jpg");
   background-attachment: fixed;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Raleway", sans-serif;
@@ -31,26 +31,14 @@ a {
   color: #f2f2f2;
   display: grid;
   grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
   overflow-x: hidden;
   padding: 0.5rem;
-  position: sticky;
-}
-@media (max-width: 500px) {
-  #layout {
-    margin: 1rem;
-    min-height: 100vh;
-  }
-}
-@media (min-width: 500px) {
-  #layout {
-    margin: 20vh 1rem 2vh;
-    min-height: 84vh;
-  }
 }
 
 .header-btn {
-  background: #000;
-  border: 3px solid #000;
+  background: #252627;
+  border: 3px solid #252627;
   border-radius: 15px;
   color: #f2f2f2;
   cursor: pointer;
@@ -61,70 +49,6 @@ a {
 }
 .header-btn:hover {
   opacity: 0.9;
-}
-
-footer {
-  color: #f2f2f2;
-  display: grid;
-  grid-row: 3/-1;
-  grid-template-columns: auto;
-  padding: 1rem;
-}
-footer .container {
-  align-items: center;
-  display: flex;
-}
-footer #footer-center {
-  flex-direction: column;
-  justify-content: center;
-}
-
-header {
-  background: #000;
-  color: #f2f2f2;
-  display: grid;
-  grid-row: 1/1;
-  left: 0;
-  padding: 1rem;
-  position: sticky;
-  right: 0;
-  text-transform: capitalize;
-  top: 0;
-  z-index: 1;
-}
-@media (max-width: 500px) {
-  header {
-    grid-template-rows: 1fr 1fr;
-  }
-  header #header-left {
-    grid-row: 2/-1;
-    justify-content: center;
-  }
-  header #header-right {
-    grid-row: 1/1;
-    justify-content: flex-end;
-  }
-}
-@media (min-width: 500px) {
-  header {
-    grid-template-columns: 1fr 1fr;
-    height: 65px;
-    margin-top: 80vh;
-  }
-  header #header-left {
-    grid-column: 1/1;
-    justify-content: flex-start;
-  }
-  header #header-right {
-    grid-column: 2/-1;
-    justify-content: flex-end;
-  }
-}
-header .container {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  padding: 0 1rem;
 }
 
 main {
