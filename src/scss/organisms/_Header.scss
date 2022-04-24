@@ -22,7 +22,7 @@ header {
       flex-direction: column;
       font-weight: bold;
       letter-spacing: 0.07rem;
-      padding: $padding-global-size;
+      padding: $padding-global-size $padding-global-size * 2;
       text-align: center;
       text-transform: uppercase;
       h1 {
