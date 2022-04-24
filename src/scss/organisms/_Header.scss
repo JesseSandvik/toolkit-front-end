@@ -14,12 +14,23 @@ header {
   }
   #header-left {
     #app-title {
+      background: $secondary;
+      border: 4px solid $primary;
+      border-radius: $border-radius-global-size;
+      cursor: pointer;
       display: flex;
       flex-direction: column;
+      font-weight: bold;
+      letter-spacing: 0.07rem;
+      padding: $padding-global-size;
+      text-align: center;
+      text-transform: uppercase;
+      h1 {
+        border-bottom: 2px solid $accent;
+        padding-bottom: math.div($padding-global-size, 4);
+      }
       small {
-        color: $accent-two;
-        font-size: 0.8rem;
-        margin: math.div($margin-global-size, 4) math.div($margin-global-size, 2) 0;
+        margin-top: math.div($margin-global-size, 2);
       }
     }
   }
