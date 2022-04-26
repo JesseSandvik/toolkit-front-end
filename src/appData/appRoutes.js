@@ -24,7 +24,7 @@ export const appRoutes = [
   },
   {
     name: 'contact',
-    path: '/gallery',
+    path: '/contact',
     element: <HomePage />,
   }
 ];
