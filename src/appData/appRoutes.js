@@ -8,8 +8,23 @@ export const appRoutes = [
     element: <HomePage />,
   },
   {
-    name: 'register',
-    path: '/register',
-    element: <RegisterPage />,
+    name: 'about',
+    path: '/about',
+    element: <HomePage />,
   },
+  {
+    name: 'gallery',
+    path: '/gallery',
+    element: <HomePage />,
+  },
+  {
+    name: 'menu',
+    path: '/menu',
+    element: <HomePage />,
+  },
+  {
+    name: 'contact',
+    path: '/gallery',
+    element: <HomePage />,
+  }
 ];

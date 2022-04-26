@@ -70,6 +70,7 @@ header #header-left #app-title {
   background: #f2f2f2;
   border: 4px solid #252627;
   border-radius: 15px;
+  box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -87,7 +88,24 @@ header #header-left #app-title small {
   margin-top: 0.5rem;
 }
 header #header-right {
+  display: flex;
   justify-content: flex-end;
+}
+header #header-right nav {
+  background: #f2f2f2;
+  border: 4px solid #252627;
+  border-radius: 15px;
+  box-shadow: -5px 5px 5px 2px rgba(0, 0, 0, 0.2);
+  display: flex;
+  width: 100%;
+}
+header #header-right nav ul {
+  align-items: center;
+  display: flex;
+  font-size: 1rem;
+  font-weight: bold;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
 main {
