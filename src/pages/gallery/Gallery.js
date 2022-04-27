@@ -1,9 +1,11 @@
 
 
-const Gallery = () => {
+const GalleryPage = () => {
     return (
-        <section></section>
+        <section>
+            <h2>Gallery</h2>
+        </section>
     );
 }
 
-export default Gallery;
+export default GalleryPage;

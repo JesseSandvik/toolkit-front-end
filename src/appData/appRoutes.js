@@ -1,6 +1,8 @@
 import AboutPage from '../pages/about/About';
-import Gallery from '../pages/gallery/Gallery';
+import ContactPage from '../pages/contact/Contact';
+import GalleryPage from '../pages/gallery/Gallery';
 import HomePage from '../pages/home/Home';
+import MenuPage from '../pages/menu/Menu';
 import RegisterPage from '../pages/register/Register';
 
 export const appRoutes = [
@@ -17,16 +19,16 @@ export const appRoutes = [
   {
     name: 'gallery',
     path: '/gallery',
-    element: <Gallery />,
+    element: <GalleryPage />,
   },
   {
     name: 'menu',
     path: '/menu',
-    element: <HomePage />,
+    element: <MenuPage />,
   },
   {
     name: 'contact',
     path: '/contact',
-    element: <HomePage />,
+    element: <ContactPage />,
   }
 ];
