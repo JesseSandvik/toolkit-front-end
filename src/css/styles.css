@@ -6,7 +6,7 @@
 }
 
 body {
-  background: linear-gradient(50deg, rgba(250, 200, 205, 0.5), rgba(249, 98, 125, 0.5), rgba(249, 98, 125, 0.7)), url("../images/polkadots.jpg");
+  background: linear-gradient(70deg, rgba(250, 200, 205, 0.5), rgba(249, 98, 125, 0.7), #f9627d, #f9627d, #f9627d, #f9627d, #f9627d), url("../images/polkadots.jpg");
   font-family: Quicksand, sans-serif;
   font-size: 0.8rem;
   overflow-x: hidden;
@@ -95,10 +95,7 @@ header #header-right {
   justify-content: flex-end;
 }
 header #header-right nav {
-  background: #f2f2f2;
-  border: 4px solid #252627;
-  border-radius: 15px;
-  box-shadow: -5px 5px 5px 2px rgba(0, 0, 0, 0.2);
+  color: #f2f2f2;
   display: flex;
   width: 100%;
 }
@@ -121,14 +118,6 @@ main {
 }
 main h2 {
   text-transform: capitalize;
-}
-main section {
-  background: #f2f2f2;
-  border: 4px solid #252627;
-  border-radius: 15px;
-  box-shadow: -5px 5px 5px 2px rgba(0, 0, 0, 0.2);
-  margin: 4rem;
-  padding: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

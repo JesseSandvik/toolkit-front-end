@@ -8,10 +8,14 @@
 }
 
 body {
-  background: linear-gradient(50deg,
+  background: linear-gradient(70deg,
   rgba($accent-two, 0.5),
-  rgba($accent, 0.5),
-  rgba($accent, 0.7)),
+  rgba($accent, 0.7),
+  rgba($accent, 1.0),
+  rgba($accent, 1.0),
+  rgba($accent, 1.0),
+  rgba($accent, 1.0),
+  rgba($accent, 1.0)),
   url('../images/polkadots.jpg');
   font-family: Quicksand, sans-serif;
   font-size: 0.8rem;
