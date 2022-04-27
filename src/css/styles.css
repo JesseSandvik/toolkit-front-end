@@ -51,9 +51,11 @@ footer .container {
 }
 footer #footer-center {
   align-items: center;
-  color: #f9627d;
+  color: #f2f2f2;
+  font-weight: bold;
   grid-column: 2/2;
   justify-content: center;
+  letter-spacing: 0.05rem;
 }
 
 header {
@@ -126,6 +128,7 @@ main section {
   border-radius: 15px;
   box-shadow: -5px 5px 5px 2px rgba(0, 0, 0, 0.2);
   margin: 4rem;
+  padding: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

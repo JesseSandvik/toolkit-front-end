@@ -9,8 +9,10 @@ footer {
   }
   #footer-center {
     align-items: center;
-    color: $accent;
+    color: $secondary;
+    font-weight: bold;
     grid-column: 2 / 2;
     justify-content: center;
+    letter-spacing: 0.05rem;
   }
 }
