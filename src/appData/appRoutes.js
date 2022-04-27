@@ -1,3 +1,4 @@
+import AboutPage from '../pages/about/About';
 import HomePage from '../pages/home/Home';
 import RegisterPage from '../pages/register/Register';
 
@@ -10,7 +11,7 @@ export const appRoutes = [
   {
     name: 'about',
     path: '/about',
-    element: <HomePage />,
+    element: <AboutPage />,
   },
   {
     name: 'gallery',

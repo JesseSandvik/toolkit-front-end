@@ -51,6 +51,7 @@ footer .container {
 }
 footer #footer-center {
   align-items: center;
+  color: #f9627d;
   grid-column: 2/2;
   justify-content: center;
 }
@@ -118,6 +119,13 @@ main {
 }
 main h2 {
   text-transform: capitalize;
+}
+main section {
+  background: #f2f2f2;
+  border: 4px solid #252627;
+  border-radius: 15px;
+  box-shadow: -5px 5px 5px 2px rgba(0, 0, 0, 0.2);
+  margin: 2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
