@@ -4,12 +4,15 @@ import Navigation from '../../molecules/navigation/Navigiation';
 import SignupButton from '../../atoms/buttons/signUp/SignUpButton';
 
 import {appTitle} from '../../appData';
+import {appRoutes} from '../../appData/appRoutes';
 
 const Header = () => {
   const navigate = useNavigate();
   return (
     <header>
-      <div id='header-left' className='container'></div>
+      <div id='header-left' className='container'>
+        <Navigation routes={appRoutes.filter(route => route.position === 'left')} />
+      </div>
       <div id="header-center" className="container">
         <span id="app-title" onClick={() => navigate('/')}>
           <h1>{appTitle}</h1>
@@ -17,7 +20,7 @@ const Header = () => {
         </span>
       </div>
       <div id="header-right" className="container">
-        <Navigation />
+        <Navigation routes={appRoutes.filter(route => route.position === 'right')} />
       </div>
     </header>
   );
