@@ -9,7 +9,8 @@ const Header = () => {
   const navigate = useNavigate();
   return (
     <header>
-      <div id="header-left" className="container">
+      <div id='header-left' className='container'></div>
+      <div id="header-center" className="container">
         <span id="app-title" onClick={() => navigate('/')}>
           <h1>{appTitle}</h1>
           <small>new york</small>
