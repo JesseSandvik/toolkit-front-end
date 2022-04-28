@@ -1,8 +1,22 @@
 @use '../variables' as *;
 
 main {
+  background: linear-gradient(70deg,
+  rgba($accent, 0.0),
+  rgba($accent, 0.2),
+  rgba($accent, 0.5),
+  rgba($accent, 0.7),
+  rgba($accent, 1.0),
+  ),
+  url('../images/polkadots.jpg');
+  border-top: 10px solid $primary;
   display: grid;
   grid-row: 2 / 2;
+  margin-top: 100vh;
+  min-height: 200vh;
+  position: sticky;
+  top: 0;
+  width: 100%;
   h2 {
     text-transform: capitalize;
   }

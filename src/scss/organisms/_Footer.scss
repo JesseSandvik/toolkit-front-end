@@ -1,15 +1,19 @@
 @use '../variables' as *;
 
 footer {
+  bottom: 0;
   display: grid;
   grid-template-columns: auto 1fr auto;
+  left: 0;
   padding: $padding-global-size;
+  position: fixed;
+  right: 0;
   .container {
     display: flex;
   }
   #footer-center {
     align-items: center;
-    color: $secondary;
+    color: $primary;
     font-weight: bold;
     grid-column: 2 / 2;
     justify-content: center;

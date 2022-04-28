@@ -9,7 +9,13 @@ header {
   grid-template-columns: 1fr auto 1fr;
   grid-template-rows: 1fr 1fr;
   grid-row: 1 / 1;
+  height: 145px;
+  left: 0;
+  position: sticky;
+  right: 0;
   text-transform: capitalize;
+  top: 0;
+  z-index: 1;
   .container {
     background: $primary;
     box-shadow: 0 5px 5px 2px rgba(0, 0, 0, 0.2);
@@ -21,13 +27,13 @@ header {
       ul {
         align-items: center;
         display: flex;
-        font-size: 1rem;
+        font-size: 1.2rem;
         font-weight: bold;
         justify-content: space-evenly;
         width: 100%;
         li {
           a {
-            padding-bottom: math.div($padding-global-size, 4);
+            padding-bottom: math.div($padding-global-size, 2);
           }
           .active {
             border-bottom: 4px solid $accent;

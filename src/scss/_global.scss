@@ -8,10 +8,16 @@
 }
 
 body {
-  background: url('../images/polkadots.jpg');
+  background: url('../images/cake-custom-colorful.jpg');
+  background-attachment: fixed;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: Quicksand, sans-serif;
   font-size: 0.8rem;
   overflow-x: hidden;
+  padding: 0;
+  z-index: -1;
 }
 
 ul {
