@@ -1,11 +1,18 @@
 @use '../variables' as *;
 
 main {
-  border: 1px solid red;
-  display: grid;
+  background: rgba($primary, 0.75);
   grid-row: 2 / 2;
-  margin: 150px $margin-global-size 70px;
-  h2 {
-    text-transform: capitalize;
+  margin: 175px 0 100px;
+  padding: $padding-global-size * 2;
+  section {
+    background: $primary;
+    border-radius: $border-radius-global-size;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100%;
+    padding: $padding-global-size;
+    width: 100%;
   }
 }

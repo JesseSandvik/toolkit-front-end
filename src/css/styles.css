@@ -147,13 +147,20 @@ header #header-center #app-title small {
   margin-top: 0.5rem;
 }
 main {
-  border: 1px solid red;
-  display: grid;
+  background: rgba(31, 31, 31, 0.75);
   grid-row: 2/2;
-  margin: 150px 1rem 70px;
+  margin: 175px 0 100px;
+  padding: 2rem;
 }
-main h2 {
-  text-transform: capitalize;
+main section {
+  background: #1f1f1f;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 100%;
+  padding: 1rem;
+  width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
