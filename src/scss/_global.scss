@@ -8,9 +8,16 @@
 }
 
 body {
-  background: url('../images/cake-custom-colorful.jpg');
+  background: linear-gradient(70deg,
+    rgba($primary, 0.2),
+    rgba($accent, 0.3),
+    rgba($accent, 0.6),
+    rgba($accent, 0.7),
+    rgba($accent, 1.0),
+  ),
+  url('../images/polkadots.jpg');
   background-attachment: fixed;
-  background-position: left;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   font-family: Quicksand, sans-serif;
