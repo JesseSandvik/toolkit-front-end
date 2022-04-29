@@ -153,14 +153,27 @@ main {
   padding: 2rem;
 }
 main section {
-  background: #1f1f1f;
-  border-radius: 15px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   height: 100%;
   padding: 1rem;
   width: 100%;
+}
+main section #left {
+  border: 1px solid red;
+  grid-column: 1/span 3;
+  grid-row: 1/-1;
+}
+main section #mid {
+  border: 1px solid violet;
+  grid-column: 4/span 1;
+  grid-row: 2/span 3;
+}
+main section #right {
+  border: 1px solid yellow;
+  grid-column: 5/-1;
+  grid-row: 1/-1;
 }
 
 /*# sourceMappingURL=styles.css.map */
