@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
 * {
   box-sizing: border-box;
   color: inherit;
@@ -147,33 +148,34 @@ header #header-center #app-title small {
   margin-top: 0.5rem;
 }
 main {
-  background: rgba(31, 31, 31, 0.75);
+  background-color: #1f1f1f;
+  border-radius: 15px;
   grid-row: 2/2;
-  margin: 175px 0 100px;
-  padding: 2rem;
+  margin: 175px 100px 100px;
 }
 main section {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
   height: 100%;
-  padding: 1rem;
   width: 100%;
 }
 main section #left {
-  border: 1px solid red;
+  background: url("../images/icecream-cake-nobg.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
   grid-column: 1/span 3;
   grid-row: 1/-1;
 }
 main section #mid {
-  border: 1px solid violet;
-  grid-column: 4/span 1;
+  color: #f1f1f1;
+  display: flex;
+  font-family: Allura, Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 5rem;
+  grid-column: 2/span 3;
   grid-row: 2/span 3;
-}
-main section #right {
-  border: 1px solid yellow;
-  grid-column: 5/-1;
-  grid-row: 1/-1;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
