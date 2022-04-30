@@ -1,11 +1,12 @@
 @use '../variables' as *;
 
 footer {
+  background: $primary;
   bottom: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   left: 0;
-  height: 75px;
+  height: 50px;
   padding: $padding-global-size $padding-global-size 0;
   position: fixed;
   right: 0;
@@ -14,10 +15,6 @@ footer {
   }
   #footer-center {
     align-items: center;
-    background: $primary;
-    border-top-left-radius: $border-radius-global-size;
-    border-top-right-radius: $border-radius-global-size;
-    box-shadow: 0 -5px 5px 2px rgba(0, 0, 0, 0.2);
     color: $secondary;
     font-weight: bold;
     grid-column: 2 / 2;

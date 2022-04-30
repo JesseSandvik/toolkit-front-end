@@ -9,14 +9,7 @@
 }
 
 body {
-  background: linear-gradient(70deg,
-    rgba($primary, 0.2),
-    rgba($accent, 0.3),
-    rgba($accent, 0.6),
-    rgba($accent, 0.7),
-    rgba($accent, 1.0),
-  ),
-  url('../images/polkadots.jpg');
+  background: $secondary;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

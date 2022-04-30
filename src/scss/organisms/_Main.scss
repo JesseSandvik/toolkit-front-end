@@ -2,33 +2,50 @@
 @use '../global' as *;
 
 main {
-  background-color: $primary;
-  border-radius: $border-radius-global-size;
   grid-row: 2 / 2;
-  margin: 175px 100px 100px;
   section {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     height: 100%;
     width: 100%;
     #left {
-      background: url('../images/icecream-cake-nobg.png');
+      background: linear-gradient(45deg,
+      rgba($accent, 1.0),
+      rgba($accent, 0.9),
+      rgba($accent, 0.8),
+      rgba($accent, 0.7));
       background-position: left;
       background-repeat: no-repeat;
-      background-size: cover;
-      grid-column: 1 / span 4;
+      background-size: contain;
+      grid-column: 1 / -1;
       grid-row: 1 / -1;
     }
     #mid {
+      background: url('../images/polkadots.jpg');
+      border-left: 10px solid $primary;
+      border-right: 10px solid $primary;
       color: $secondary;
       display: flex;
-      grid-column: 2 /span 3;
+      grid-column: 2 / 2;
       grid-row: 1 / -1;
       justify-content: center;
       h2 {
         letter-spacing: 0.1rem;
       }
+    }
+    #right {
+      background: linear-gradient(45deg,
+      rgba($accent, 0.7),
+      rgba($accent, 0.8),
+      rgba($accent, 0.9),
+      rgba($accent, 1.0)),
+      url('../images/elegant-cake-nobg.png');
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: contain;
+      grid-column: 3 / -1;
+      grid-row: 1 / -1;
     }
   }
 }
