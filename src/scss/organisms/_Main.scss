@@ -17,17 +17,18 @@ main {
       background-position: left;
       background-repeat: no-repeat;
       background-size: cover;
-      grid-column: 1 / span 3;
+      grid-column: 1 / span 4;
       grid-row: 1 / -1;
     }
     #mid {
       color: $secondary;
       display: flex;
-      font-family: Allura, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      font-size: 5rem;
       grid-column: 2 /span 3;
-      grid-row: 2 / span 3;
+      grid-row: 1 / -1;
       justify-content: center;
+      h2 {
+        letter-spacing: 0.1rem;
+      }
     }
   }
 }
