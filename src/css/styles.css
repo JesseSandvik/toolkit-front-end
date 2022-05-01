@@ -150,24 +150,22 @@ header #header-center #app-title small {
   text-transform: uppercase;
 }
 main {
-  grid-row: 2/2;
-}
-main section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   height: 100%;
   width: 100%;
+  grid-row: 2/2;
 }
-main section #left {
-  background: linear-gradient(45deg, #d36582, rgba(211, 101, 130, 0.9), rgba(211, 101, 130, 0.8), rgba(211, 101, 130, 0.7));
-  background-position: left;
+main #left {
+  background: linear-gradient(45deg, rgba(211, 101, 130, 0.3), rgba(211, 101, 130, 0.4), rgba(211, 101, 130, 0.5), rgba(211, 101, 130, 0.6)), url("../images/stacy-preferred-nobg.png");
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
   grid-column: 1/-1;
   grid-row: 1/-1;
 }
-main section #mid {
+main #mid {
   background: url("../images/polkadots.jpg");
   border-left: 10px solid #1f1f1f;
   border-right: 10px solid #1f1f1f;
@@ -177,10 +175,7 @@ main section #mid {
   grid-row: 1/-1;
   justify-content: center;
 }
-main section #mid h2 {
-  letter-spacing: 0.1rem;
-}
-main section #right {
+main #right {
   background: linear-gradient(45deg, rgba(211, 101, 130, 0.7), rgba(211, 101, 130, 0.8), rgba(211, 101, 130, 0.9), #d36582), url("../images/elegant-cake-nobg.png");
   background-position: bottom;
   background-repeat: no-repeat;
