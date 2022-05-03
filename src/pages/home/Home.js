@@ -8,7 +8,7 @@ const HomePage = () => {
           <p>from my home for you!</p>
         </div>
       </div>
-      <div></div>
+      <div className="right"></div>
     </section>
   );
 };

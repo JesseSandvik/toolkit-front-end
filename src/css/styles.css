@@ -158,11 +158,20 @@ main {
   grid-row: 2/2;
 }
 main #left {
-  background: linear-gradient(45deg, rgba(211, 101, 130, 0.3), rgba(211, 101, 130, 0.4), rgba(211, 101, 130, 0.5), rgba(211, 101, 130, 0.6)), url("../images/stacy-preferred-nobg.png");
+  background: linear-gradient(90deg, rgba(211, 101, 130, 0.3), rgba(211, 101, 130, 0.4), rgba(211, 101, 130, 0.5), rgba(211, 101, 130, 0.6), rgba(211, 101, 130, 0.7)), url("../images/stacy-preferred-nobg.png");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
-  grid-column: 1/-1;
+  border-left: 10px solid #f1f1f1;
+  grid-column: 2/2;
+  grid-row: 1/-1;
+}
+main #mid {
+  background: linear-gradient(290deg, rgba(211, 101, 130, 0.4), rgba(211, 101, 130, 0.5), rgba(31, 31, 31, 0.4), rgba(31, 31, 31, 0.4), rgba(31, 31, 31, 0.5)), url("../images/polkadots.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 1/1;
   grid-row: 1/-1;
 }
 main section {
@@ -170,7 +179,7 @@ main section {
   grid-column: 1/-1;
   grid-row: 1/-1;
   grid-template-columns: 1fr 1fr;
-  margin: 190px 100px 100px;
+  margin: 225px 100px 110px;
   z-index: 1;
 }
 main section .left {
@@ -178,6 +187,7 @@ main section .left {
   border-radius: 15px;
   border: 1px solid #f1f1f1;
   box-shadow: -5px 5px 5px 2px rgba(0, 0, 0, 0.1);
+  transform: translate(50px, -50px);
 }
 main section .left .top {
   align-items: center;
@@ -197,6 +207,13 @@ main section .left .top h3 {
   font-weight: bold;
   letter-spacing: 0.1rem;
   margin: 0;
+}
+main section .right {
+  background: rgba(31, 31, 31, 0.9);
+  border-radius: 15px;
+  border: 1px solid #1f1f1f;
+  box-shadow: -5px 5px 5px 2px rgba(0, 0, 0, 0.1);
+  transform: translate(-50px, 0);
 }
 
 /*# sourceMappingURL=styles.css.map */
