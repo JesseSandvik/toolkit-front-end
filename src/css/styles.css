@@ -211,6 +211,22 @@ main section .left .top h3 {
   letter-spacing: 0.1rem;
   margin: 0;
 }
+main section .left .bottom {
+  border: 1px solid violet;
+  display: flex;
+  justify-content: space-between;
+}
+main section .left .bottom .image {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+main section .left .bottom .image img {
+  border-radius: 50%;
+  height: 300px;
+  max-width: 300px;
+}
 main section .right {
   background: rgba(31, 31, 31, 0.9);
   border-radius: 15px;

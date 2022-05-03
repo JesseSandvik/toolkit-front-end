@@ -74,6 +74,22 @@ main {
           margin: 0;
         }
       }
+      .bottom {
+        border: 1px solid violet;
+        display: flex;
+        justify-content: space-between;
+        .image {
+          border: 1px solid red;
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          img {
+            border-radius: 50%;
+            height: 300px;
+            max-width: 300px;
+          }
+        }
+      }
     }
     .right {
       background: rgba($primary, 0.9);
