@@ -183,5 +183,14 @@ main #right {
   grid-column: 3/-1;
   grid-row: 1/-1;
 }
+main section {
+  background: rgba(241, 241, 241, 0.5);
+  border-radius: 15px;
+  border: 1px solid #f1f1f1;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  margin: 190px 100px 100px;
+  z-index: 1;
+}
 
 /*# sourceMappingURL=styles.css.map */

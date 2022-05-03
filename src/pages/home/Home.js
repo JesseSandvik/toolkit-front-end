@@ -1,9 +1,7 @@
 const HomePage = () => {
   return (
     <section>
-      <div className="container" id='mid'>
-        <h2>Stacy's Cakes</h2>
-      </div>
+      <h2>Everything I create is custom made, with care, from my home for you!</h2>
     </section>
   );
 };

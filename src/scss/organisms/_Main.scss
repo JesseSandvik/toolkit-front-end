@@ -44,5 +44,13 @@ main {
     grid-column: 3 / -1;
     grid-row: 1 / -1;
   }
-  section {}
+  section {
+    background: rgba($secondary, 0.5);
+    border-radius: $border-radius-global-size;
+    border: 1px solid $secondary;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    margin: 190px 100px 100px;
+    z-index: 1;
+  }
 }
