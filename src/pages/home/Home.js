@@ -1,7 +1,14 @@
 const HomePage = () => {
   return (
     <section>
-      <h2>Everything I create is custom made, with care, from my home for you!</h2>
+      <div className="left">
+        <div className="top">
+          <p>Everything I create is custom made</p>
+          <h3>with care</h3>
+          <p>from my home for you!</p>
+        </div>
+      </div>
+      <div></div>
     </section>
   );
 };

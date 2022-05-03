@@ -165,32 +165,38 @@ main #left {
   grid-column: 1/-1;
   grid-row: 1/-1;
 }
-main #mid {
-  background: url("../images/polkadots.jpg");
-  border-left: 10px solid #1f1f1f;
-  border-right: 10px solid #1f1f1f;
-  color: #f1f1f1;
-  display: flex;
-  grid-column: 2/2;
-  grid-row: 1/-1;
-  justify-content: center;
-}
-main #right {
-  background: linear-gradient(45deg, rgba(211, 101, 130, 0.7), rgba(211, 101, 130, 0.8), rgba(211, 101, 130, 0.9), #d36582), url("../images/elegant-cake-nobg.png");
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: contain;
-  grid-column: 3/-1;
-  grid-row: 1/-1;
-}
 main section {
-  background: rgba(241, 241, 241, 0.5);
-  border-radius: 15px;
-  border: 1px solid #f1f1f1;
+  display: grid;
   grid-column: 1/-1;
   grid-row: 1/-1;
+  grid-template-columns: 1fr 1fr;
   margin: 190px 100px 100px;
   z-index: 1;
+}
+main section .left {
+  background: rgba(241, 241, 241, 0.85);
+  border-radius: 15px;
+  border: 1px solid #f1f1f1;
+  box-shadow: -5px 5px 5px 2px rgba(0, 0, 0, 0.1);
+}
+main section .left .top {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+main section .left .top p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+main section .left .top h3 {
+  color: #d36582;
+  font-size: 4rem;
+  font-family: Corinthia, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  margin: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
