@@ -9,32 +9,37 @@ main {
   width: 100%;
   grid-row: 2 / 2;
   #left {
-    background: linear-gradient(90deg,
-    rgba($accent, 0.3),
-    rgba($accent, 0.4),
-    rgba($accent, 0.5),
-    rgba($accent, 0.6),
-    rgba($accent, 0.7)),
-    url('../images/stacy-preferred-nobg.png');
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: contain;
-    border-left: 10px solid $secondary;
     grid-column: 2 / 2;
     grid-row: 1 / -1;
   }
   #mid {
-    background: linear-gradient(290deg,
-    rgba($accent, 0.4),
-    rgba($accent, 0.5),
-    rgba($primary, 0.4),
-    rgba($primary, 0.4),
-    rgba($primary, 0.5)),
-    url('../images/polkadots.jpg');
+    background: linear-gradient(135deg,
+      rgba($secondary, 0.0),
+      rgba($secondary, 0.5),
+      rgba($secondary, 1.0),
+      rgba($secondary, 1.0),
+      rgba($secondary, 1.0),
+      rgba($secondary, 1.0)),
+      url('../images/polkadots.jpg');
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
     grid-column: 1 / 1;
+    grid-row: 1 / -1;
+  }
+  #right {
+    background: linear-gradient(315deg,
+      rgba($secondary, 0.0),
+      rgba($secondary, 0.5),
+      rgba($secondary, 1.0),
+      rgba($secondary, 1.0),
+      rgba($secondary, 1.0),
+      rgba($secondary, 1.0)),
+      url('../images/polkadots.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 3 / -1;
     grid-row: 1 / -1;
   }
   section {
