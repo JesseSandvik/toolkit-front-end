@@ -36,36 +36,47 @@ header {
         display: flex;
         padding: $padding-global-size;
         width: 100%;
-      }
-      ul {
-        align-items: center;
-        display: flex;
-        font-size: 1.2rem;
-        font-weight: bold;
-        justify-content: space-evenly;
-        width: 100%;
-        li {
-          a {
-            padding-bottom: math.div($padding-global-size, 2);
-          }
-          .active {
-            border-bottom: 4px solid $accent;
+        ul {
+          align-items: center;
+          display: flex;
+          font-size: 1.2rem;
+          font-weight: bold;
+          justify-content: space-evenly;
+          width: 100%;
+          li {
+            a {
+              padding-bottom: math.div($padding-global-size, 2);
+            }
+            .active {
+              border-bottom: 4px solid $accent;
+            }
           }
         }
       }
     }
   }
   #header-left {
-    padding: $padding-global-size;
+    @include lg {
+      padding: $padding-global-size;
+    }
   }
   #header-center {
     align-items: center;
     border-bottom-left-radius: $border-radius-global-size;
     border-bottom-right-radius: $border-radius-global-size;
     display: flex;
-    grid-column: 2 / 2;
-    grid-row: 1 / -1;
     justify-content: center;
+    @include sm {
+      grid-column: 1 / -1;
+      grid-row: 1 / -1;
+    }
+    @include lg {
+      grid-column: 2 / 2;
+      grid-row: 1 / -1;
+      #app-title {
+        margin-top: $margin-global-size;
+      }
+    }
     #app-title {
       background: $secondary;
       border: 5px solid $primary;
@@ -77,7 +88,6 @@ header {
       font-size: 1.2rem;
       font-weight: bold;
       letter-spacing: 0.1rem;
-      margin-top: $margin-global-size;
       padding: $padding-global-size $padding-global-size * 2;
       text-align: center;
       h1 {

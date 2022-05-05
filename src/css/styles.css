@@ -113,32 +113,47 @@ header .container {
     padding: 1rem;
     width: 100%;
   }
+  header .container nav ul {
+    align-items: center;
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: bold;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  header .container nav ul li a {
+    padding-bottom: 0.5rem;
+  }
+  header .container nav ul li .active {
+    border-bottom: 4px solid #d36582;
+  }
 }
-header .container nav ul {
-  align-items: center;
-  display: flex;
-  font-size: 1.2rem;
-  font-weight: bold;
-  justify-content: space-evenly;
-  width: 100%;
-}
-header .container nav ul li a {
-  padding-bottom: 0.5rem;
-}
-header .container nav ul li .active {
-  border-bottom: 4px solid #d36582;
-}
-header #header-left {
-  padding: 1rem;
+@media (min-width: 1200px) {
+  header #header-left {
+    padding: 1rem;
+  }
 }
 header #header-center {
   align-items: center;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   display: flex;
-  grid-column: 2/2;
-  grid-row: 1/-1;
   justify-content: center;
+}
+@media (max-width: 500px) {
+  header #header-center {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+  }
+}
+@media (min-width: 1200px) {
+  header #header-center {
+    grid-column: 2/2;
+    grid-row: 1/-1;
+  }
+  header #header-center #app-title {
+    margin-top: 1rem;
+  }
 }
 header #header-center #app-title {
   background: #f1f1f1;
@@ -151,7 +166,6 @@ header #header-center #app-title {
   font-size: 1.2rem;
   font-weight: bold;
   letter-spacing: 0.1rem;
-  margin-top: 1rem;
   padding: 1rem 2rem;
   text-align: center;
 }
