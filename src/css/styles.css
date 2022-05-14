@@ -18,6 +18,13 @@ body {
   padding: 0;
   z-index: -1;
 }
+body .App {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
 
 ul {
   list-style: none;
@@ -26,14 +33,6 @@ ul {
 
 a {
   text-decoration: none;
-}
-
-#layout {
-  color: #1f1f1f;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
-  overflow-x: hidden;
 }
 
 .header-btn {
@@ -180,10 +179,12 @@ header #header-center #app-title small {
 }
 
 main {
+  border: 1px solid violet;
   display: grid;
   height: 100%;
   width: 100%;
   grid-row: 2/2;
+  padding: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

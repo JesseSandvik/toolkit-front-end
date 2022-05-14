@@ -2,8 +2,10 @@
 @use '../global' as *;
 
 main {
+  border: 1px solid violet;
   display: grid;
   height: 100%;
   width: 100%;
   grid-row: 2 / 2;
+  padding: 1rem;
 }

@@ -9,9 +9,6 @@ const Main = () => {
   return (
     <main>
       <Routes>{routesList}</Routes>
-      <div className="container" id='left'></div>
-      <div className="container" id='mid'></div>
-      <div className="container" id='right'></div>
     </main>
   );
 };
