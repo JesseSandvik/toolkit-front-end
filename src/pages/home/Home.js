@@ -15,7 +15,6 @@ const HomePage = () => {
           </span>
         </div>
       </div>
-      <div className="right"></div>
     </section>
   );
 };

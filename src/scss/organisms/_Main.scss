@@ -3,58 +3,18 @@
 
 main {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   height: 100%;
   width: 100%;
   grid-row: 2 / 2;
-  #left {
-    grid-column: 2 / 2;
-    grid-row: 1 / -1;
-  }
-  #mid {
-    background: linear-gradient(135deg,
-      rgba($secondary, 0.0),
-      rgba($secondary, 0.5),
-      rgba($secondary, 1.0),
-      rgba($secondary, 1.0),
-      rgba($secondary, 1.0),
-      rgba($secondary, 1.0)),
-      url('../images/polkadots.jpg');
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    grid-column: 1 / 1;
-    grid-row: 1 / -1;
-  }
-  #right {
-    background: linear-gradient(315deg,
-      rgba($secondary, 0.0),
-      rgba($secondary, 0.5),
-      rgba($secondary, 1.0),
-      rgba($secondary, 1.0),
-      rgba($secondary, 1.0),
-      rgba($secondary, 1.0)),
-      url('../images/polkadots.jpg');
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    grid-column: 3 / -1;
-    grid-row: 1 / -1;
-  }
   section {
     display: grid;
     grid-column: 1 / -1;
     grid-row: 1 / -1;
-    grid-template-columns: 1fr 1fr;
-    margin: 225px 100px 110px;
-    z-index: 1;
     .left {
       background: rgba($secondary, 0.85);
       border-radius: $border-radius-global-size;
       border: 1px solid $secondary;
       box-shadow: -5px 5px 5px 2px rgba(0, 0, 0, 0.1);
-      transform: translate(50px, -50px);
       .top {
         align-items: center;
         display: flex;
@@ -90,13 +50,6 @@ main {
           }
         }
       }
-    }
-    .right {
-      background: rgba($primary, 0.9);
-      border-radius: $border-radius-global-size;
-      border: 1px solid $primary;
-      box-shadow: -5px 5px 5px 2px rgba(0, 0, 0, 0.1);
-      transform: translate(-50px, 0);
     }
   }
 }
