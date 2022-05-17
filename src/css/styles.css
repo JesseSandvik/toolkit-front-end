@@ -179,7 +179,7 @@ header #header-center #app-title small {
 }
 
 main {
-  border: 1px solid violet;
+  background: rgba(31, 31, 31, 0.8);
   display: grid;
   height: 100%;
   width: 100%;

@@ -2,7 +2,7 @@
 @use '../global' as *;
 
 main {
-  border: 1px solid violet;
+  background: rgba($primary, 0.8);
   display: grid;
   height: 100%;
   width: 100%;
