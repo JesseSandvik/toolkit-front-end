@@ -3,9 +3,9 @@
 
 main {
   background: rgba($primary, 0.8);
+  border-radius: $border-radius-global-size;
   display: grid;
-  height: 100%;
-  width: 100%;
   grid-row: 2 / 2;
+  margin: $margin-global-size * 2;
   padding: 1rem;
 }

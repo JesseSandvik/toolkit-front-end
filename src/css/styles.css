@@ -180,10 +180,10 @@ header #header-center #app-title small {
 
 main {
   background: rgba(31, 31, 31, 0.8);
+  border-radius: 15px;
   display: grid;
-  height: 100%;
-  width: 100%;
   grid-row: 2/2;
+  margin: 2rem;
   padding: 1rem;
 }
 
