@@ -179,8 +179,7 @@ header #header-center #app-title small {
 }
 
 main {
-  background: rgba(31, 31, 31, 0.8);
-  border-radius: 15px;
+  border: 1px solid red;
   display: grid;
   grid-row: 2/2;
   margin: 2rem;
