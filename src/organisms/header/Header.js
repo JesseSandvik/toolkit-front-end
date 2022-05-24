@@ -1,17 +1,15 @@
 import { useNavigate } from 'react-router-dom';
-import LoginButton from '../../atoms/buttons/login/LoginButton';
 import Navigation from '../../molecules/navigation/Navigiation';
-import SignupButton from '../../atoms/buttons/signUp/SignUpButton';
 
-import {appTitle} from '../../appData';
-import {appRoutes} from '../../appData/appRoutes';
+import {appTitle} from '../../app/app';
+import {routes} from '../../app/routes';
 
 const Header = () => {
   const navigate = useNavigate();
   return (
     <header>
       <div id='header-left' className='container'>
-        <Navigation routes={appRoutes.filter(route => route.position === 'left')} />
+        <Navigation routes={routes.filter(route => route.position === 'left')} />
       </div>
       <div id="header-center" className="container">
         <span id="app-title" onClick={() => navigate('/')}>
@@ -20,7 +18,7 @@ const Header = () => {
         </span>
       </div>
       <div id="header-right" className="container">
-        <Navigation routes={appRoutes.filter(route => route.position === 'right')} />
+        <Navigation routes={routes.filter(route => route.position === 'right')} />
       </div>
     </header>
   );

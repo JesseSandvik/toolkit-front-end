@@ -1,3 +1,4 @@
+import Button from '../../atoms/button/Button';
 import Heading from '../../atoms/heading/Heading';
 import iceCreamCake from '../../images/cake-custom-icecream.jpg';
 import Paragraph from '../../atoms/paragraph/Paragraph';
@@ -10,6 +11,10 @@ const HomePage = () => {
       <Paragraph>is custom made</Paragraph>
       <Heading level='2'>with care</Heading>
       <Paragraph>fresh from my kitchen for you!</Paragraph>
+      <div>
+      <Button>have a taste!</Button>
+      <Button>see what's on the menu</Button>
+      </div>
     </section>
   );
 };
