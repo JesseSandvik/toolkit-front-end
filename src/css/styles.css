@@ -201,5 +201,18 @@ main section h2 {
 main section p {
   color: #d36582;
 }
+main section button {
+  background: #d36582;
+  border: none;
+  border-radius: 7.5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  color: #f1f1f1;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  text-transform: capitalize;
+}
 
 /*# sourceMappingURL=styles.css.map */

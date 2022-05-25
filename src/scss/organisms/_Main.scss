@@ -1,5 +1,6 @@
 @use '../variables' as *;
 @use '../global' as *;
+@use 'sass:math';
 
 main {
   border: 1px solid red;
@@ -21,6 +22,19 @@ main {
     }
     p {
       color: $accent;
+    }
+    button {
+      background: $accent;
+      border: none;
+      border-radius: math.div($border-radius-global-size, 2);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      color: $secondary;
+      cursor: pointer;
+      font-weight: bold;
+      letter-spacing: 0.05rem;
+      margin-top: $margin-global-size;
+      padding: $padding-global-size;
+      text-transform: capitalize;
     }
   }
 }

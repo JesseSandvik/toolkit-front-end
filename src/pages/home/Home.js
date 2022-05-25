@@ -12,8 +12,7 @@ const HomePage = () => {
       <Heading level='2'>with care</Heading>
       <Paragraph>fresh from my kitchen for you!</Paragraph>
       <div>
-      <Button>have a taste!</Button>
-      <Button>see what's on the menu</Button>
+      <Button>see what's on the menu!</Button>
       </div>
     </section>
   );
