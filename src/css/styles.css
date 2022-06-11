@@ -179,7 +179,6 @@ header #header-center #app-title small {
 }
 
 main {
-  border: 1px solid red;
   display: grid;
   grid-row: 2/2;
   margin: 2rem;
@@ -187,7 +186,6 @@ main {
 }
 main section {
   align-items: center;
-  border: 1px solid orange;
   display: flex;
   flex-direction: column;
   font-size: 1.5rem;

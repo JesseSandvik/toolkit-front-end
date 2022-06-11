@@ -3,14 +3,12 @@
 @use 'sass:math';
 
 main {
-  border: 1px solid red;
   display: grid;
   grid-row: 2 / 2;
   margin: $margin-global-size * 2;
   padding: 1rem;
   section {
     align-items: center;
-    border: 1px solid orange;
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
